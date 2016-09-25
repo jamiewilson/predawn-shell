@@ -1,0 +1,45 @@
+function prompt_predawn_precmd {
+  setopt LOCAL_OPTIONS
+  unsetopt XTRACE KSH_ARRAYS
+
+  if (( $+functions[git-info] )); then
+    git-info
+  fi
+
+  if [[ -z "${git_info[dirty]}" ]]; then
+    _prompt_predawn_git_color='%F{2}'
+  else
+    _prompt_predawn_git_color='%F{3}'
+  fi
+}
+
+function prompt_predawn_setup {
+  prompt_opts=(cr percent subst)
+  # Load required functions.
+  autoload -Uz add-zsh-hook
+
+  # Add hook for calling git-info before each command.
+  add-zsh-hook precmd prompt_predawn_precmd
+
+  zstyle ':prezto:module:git:info' verbose 'yes'
+  zstyle ':prezto:module:git:info:branch' format '%b'
+  zstyle ':prezto:module:git:info:dirty' format ' ±'
+  zstyle ':prezto:module:git:info:keys' format \
+    'prompt' ' %b%D' \
+    'dirty' '%D'
+
+  # Define prompts.
+  PROMPT='[%F{4}%2~%f${_prompt_predawn_git_color}${git_info[prompt]}%f] '
+  RPROMPT=''
+}
+
+function prompt_predawn_preview {
+  local +h PROMPT=''
+  local +h RPROMPT=''
+  local +h SPROMPT=''
+
+  editor-info 2>/dev/null
+  prompt_preview_theme 'predawn'
+}
+
+prompt_predawn_setup "$@"
