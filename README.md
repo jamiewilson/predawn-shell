@@ -36,3 +36,12 @@ Does your command line need some love. Get [Predawn](https://github.com/jamiewil
 1. Open your `~/.zshrc` file 
 1. Set your ZSH_THEME variable to "Predawn", i.e. `ZSH_THEME="Predawn"`
 1. Reload your settings with `source ~/.zshrc`
+
+---
+
+### ZSH Prezto Theme
+
+1. Place `prompt_predawn_setup` into `~/.zprezto/modules/prompt/functions`
+1. Try it out with `prompt predawn` or...
+1. Configure it as your default with `zstyle ':prezto:module:prompt' theme 'predawn'` in `~/.zpreztorc`
+1. Reload your shell with `source ~/.zshrc`
