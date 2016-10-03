@@ -34,6 +34,8 @@ Get [Predawn](https://github.com/jamiewilson/predawn) for iTerm, Terminal (speci
 
 1. Add `predawn-hyperterm` to the plugins array in `~/.hyperterm.js`
 
+---
+
 ### [Oh-My-ZSH Prompt Theme](http://ohmyz.sh/)
 
 1. Place `Predawn.zsh-theme` into `~/.oh-my-zsh/themes`
