@@ -1,12 +1,12 @@
 # Predawn Shell 
 
-Does your command line need some love. Get [Predawn](https://github.com/jamiewilson/predawn) for [iTerm](http://iterm2.com/), Terminal (special thanks to [@danielbayley](https://github.com/danielbayley), and a [Oh-My-ZSH](http://ohmyz.sh/) prompt theme.
+Get [Predawn](https://github.com/jamiewilson/predawn) for iTerm, Terminal (special thanks to [@danielbayley](https://github.com/danielbayley), HyperTerm along with a command-line prompt theme easily installed with Oh-my-zsh or Prezto.
 
 ![predawn-shell-iterm](http://i.imgur.com/lJ34FpJ.png)
 
 ## Installation
 
-### iTerm 
+### [iTerm](http://iterm2.com/) 
 
 1. Open Preferences — <kbd>Cmd</kbd> + <kbd>,</kbd>
 1. Go to `Profiles` tab
@@ -30,7 +30,11 @@ Does your command line need some love. Get [Predawn](https://github.com/jamiewil
 
 ---
 
-### ZSH Prompt Theme
+### [HyperTerm](https://hyperterm.org/)
+
+1. Add `predawn-hyperterm` to the plugins array in `~/.hyperterm.js`
+
+### [Oh-My-ZSH Prompt Theme](http://ohmyz.sh/)
 
 1. Place `Predawn.zsh-theme` into `~/.oh-my-zsh/themes`
 1. Open your `~/.zshrc` file 
@@ -39,7 +43,7 @@ Does your command line need some love. Get [Predawn](https://github.com/jamiewil
 
 ---
 
-### ZSH Prezto Theme
+### [ZSH Prezto Theme](https://github.com/sorin-ionescu/prezto)
 
 1. Place `prompt_predawn_setup` into `~/.zprezto/modules/prompt/functions`
 1. Try it out with `prompt predawn` or...
