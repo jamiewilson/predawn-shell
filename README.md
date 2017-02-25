@@ -1,6 +1,6 @@
 # Predawn Shell 
 
-Get [Predawn](https://github.com/jamiewilson/predawn) for iTerm, Terminal (special thanks to [@danielbayley](https://github.com/danielbayley), HyperTerm along with a command-line prompt theme easily installed with Oh-my-zsh or Prezto.
+Get [Predawn](https://github.com/jamiewilson/predawn) for iTerm, Terminal (special thanks to [@danielbayley](https://github.com/danielbayley)), HyperTerm along with a command-line prompt theme easily installed with Oh-my-zsh or Prezto.
 
 ![predawn-shell-iterm](http://i.imgur.com/lJ34FpJ.png)
 
@@ -51,3 +51,10 @@ Get [Predawn](https://github.com/jamiewilson/predawn) for iTerm, Terminal (speci
 1. Try it out with `prompt predawn` or...
 1. Configure it as your default with `zstyle ':prezto:module:prompt' theme 'predawn'` in `~/.zpreztorc`
 1. Reload your shell with `source ~/.zshrc`
+
+---
+
+### [zplug](http://zplug.sh)
+
+1. Add `zplug jamiewilson/predawn-shell, as:theme` [above `zplug load` in your `~/.zshrc`](https://github.com/zplug/zplug#usage)
+1. `zplug install` to install your plugins and reload `~/.zshrc`
