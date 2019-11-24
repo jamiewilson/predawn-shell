@@ -1,4 +1,4 @@
-# Predawn Shell 
+# Predawn Shell
 
 Get [Predawn](https://github.com/jamiewilson/predawn) for iTerm, Terminal (special thanks to [@danielbayley](https://github.com/danielbayley)), HyperTerm along with a command-line prompt theme easily installed with Oh-my-zsh or Prezto.
 
@@ -6,7 +6,7 @@ Get [Predawn](https://github.com/jamiewilson/predawn) for iTerm, Terminal (speci
 
 ## Installation
 
-### [iTerm](http://iterm2.com/) 
+### [iTerm](http://iterm2.com/)
 
 1. Open Preferences — <kbd>Cmd</kbd> + <kbd>,</kbd>
 1. Go to `Profiles` tab
@@ -39,9 +39,16 @@ Get [Predawn](https://github.com/jamiewilson/predawn) for iTerm, Terminal (speci
 ### [Oh-My-ZSH Prompt Theme](http://ohmyz.sh/)
 
 1. Place `Predawn.zsh-theme` into `~/.oh-my-zsh/themes`
-1. Open your `~/.zshrc` file 
+1. Open your `~/.zshrc` file
 1. Set your ZSH_THEME variable to "Predawn", i.e. `ZSH_THEME="Predawn"`
 1. Reload your settings with `source ~/.zshrc`
+
+---
+
+### [VS Code Terminal](https://code.visualstudio.com/api/references/theme-color#integrated-terminal-colors)
+
+1. In VS Code open the command pallete, ⌘+⇧+P, and typing "Preferences: Open Settings (JSON)" to open the settings.json file
+1. Copy `Predawn.json` contents into your `settings.json` file
 
 ---
 
